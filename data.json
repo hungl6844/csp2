@@ -1,0 +1,16 @@
+[{
+  "id": "init",
+  "text": "You wake up. As you slowly open your eyes, you hear a familiar sound besides you. You turn towards your beeping alarm clock. You get up and turn it off. You feel weightless, as if you’ve had a really good night’s sleep.",
+  "data": {
+    "choice1": "kitchen",
+    "choice2": "bathroom"
+  }
+},
+{
+  "id": "kitchen",
+  "text": "You walk into your hallway. As you walk past your window you stare at the vastness of the sky. You’re amazed by how beautiful the sky always looks when you wake up. You walk onwards towards the kitchen. When you go into the kitchen, you eat a few frozen chunks of what you hope is ice-cream, and scroll through the news on your phone. When you’re done absorbing the information on the page, you walk into your study. Or do you?"
+},
+{
+  "id": "bathroom",
+  "text": "You walk into the bathroom and, well… After what happened in there, you’ve lost your appetite. So instead you head to the study."
+}]
