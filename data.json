@@ -1,16 +1,98 @@
 [{
   "id": "init",
-  "text": "You wake up. As you slowly open your eyes, you hear a familiar sound besides you. You turn towards your beeping alarm clock. You get up and turn it off. You feel weightless, as if you’ve had a really good night’s sleep.",
-  "data": {
-    "choice1": "kitchen",
-    "choice2": "bathroom"
+  "text": "You wake up. As you slowly open your eyes, you hear a familiar sound besides you. You turn towards your beeping alarm clock. You get up and turn it off. You feel weightless, as if you’ve had a really good night’s sleep. You go to the:",
+  "choices": {
+    "1": "kitchen",
+    "2": "bathroom"
   }
 },
 {
   "id": "kitchen",
-  "text": "You walk into your hallway. As you walk past your window you stare at the vastness of the sky. You’re amazed by how beautiful the sky always looks when you wake up. You walk onwards towards the kitchen. When you go into the kitchen, you eat a few frozen chunks of what you hope is ice-cream, and scroll through the news on your phone. When you’re done absorbing the information on the page, you walk into your study. Or do you?"
+  "text": "You walk into your hallway. As you walk past your window you stare at the vastness of the sky. You’re amazed by how beautiful the sky always looks when you wake up. You walk onwards towards the kitchen. When you go into the kitchen, you eat a few frozen chunks of what you hope is ice-cream, and scroll through the news on your phone. When you’re done absorbing the information on the page, you walk into your study. Or do you?",
+  "choices": {
+    "1": "eat more",
+    "2": "study"
+  }
 },
 {
   "id": "bathroom",
-  "text": "You walk into the bathroom and, well… After what happened in there, you’ve lost your appetite. So instead you head to the study."
+  "text": "You walk into the bathroom and, well… After what happened in there, you’ve lost your appetite. So instead you head to the study.",
+  "choices": {
+    "1": "study"
+  }
+},
+{
+  "id": "eat more",
+  "text": "You eat something frozen, and well… Your teeth get stuck in the ice. And you can’t get them out. So you saw them off. Then, when you shove some metal replacements you made in your garage in your mouth instead, they stab through your gums. You reflexively bite down, and those makeshift teeth stab into your brain. Oops.",
+  "choices": {
+    "1": "death"
+  }
+},
+{
+  "id": "death",
+  "text": "YOU DIED.",
+  "choices": {
+    "1": "revive",
+    "2": "exit"
+  }
+},
+{
+  "id": "study",
+  "text": "You stretch. You’ve been running low on money recently, so you connect to the aeronet to look for a bit of work. You see two options, and immediately your gaze is drawn to the highest-paying option. 10 million credits! You would do anything for that kind of money, except… well, this task is harder than the others you’ve done. Normally, these creature-slaying jobs are easy for you, even the highest-ranked ones, but this one seems impossible to you. But you’re not the highest-ranked <get user input here for a class choice of Fighter or wizard> in the metroplanet for no reason. You get ready to head out. This holeworm surely can’t deny the might of <user-name>. Right?",
+  "choices": {
+    "1": "fight right away",
+    "2": "assemble a team"
+  }
+},
+{
+  "id": "fight right away",
+  "text": "You go fight the holeworm. Surprise! You don’t die! You defeat the holeworm, then go home. And the holeworm’s decapitated head, which you were so arrogant to bring home sucks you into it’s mouth and, well, who knows. Legend says <user-name> is still in that giant black hole over that way…",
+  "choices": {
+    "1": "death"
+  }
+},
+{
+  "id": "assemble a team",
+  "text": "You get ready to make a team. But unfortunately, your great power puts some restrictions on how many people you can work with, and who you can work with. In your many years working in this industry, you made many enemies, which means you can’t work with many people at once, due to your trust issues. You’re also limited to less-powerful and lesser-known agents, just to ensure that they still have some fascination with you, making sure they won’t give you a boo-boo.",
+  "choices": {
+    "1": "rogue",
+    "2": "wizard",
+    "3": "healer"
+  }
+},
+{
+  "id": "rogue",
+  "text": "You’re already suspicious of the little man that you recruited as a rogue. A rogue is a massively overpowered role, with their weapons having no cooldown and doing massive amounts of damage, and still being able to be incredibly stealthy. CALAMITY MOD DEVS PLS FIX!!!! So as you keep an eye on Gary, you walk to the holeworm’s home. Then, suddenly Gary disappears. You look around. THUNK! You look down and see the blood-covered spear of destiny protruding from your chest. You fall over. You should never have trusted that little brat.",
+  "choices": {
+    "1": "death"
+  }
+},
+{
+  "id": "wizard",
+  "text": "The wizard, Ganfald, is a good friend of yours. You’ve had some good times together. As you fly to the site of the holeworm contamination, you talk about the meteodroid army you defeated last year. Those little space critters are so annoying… As you make touchdown on the moon that you were told had the holeworm, you think of the Houston Texans, something you heard about on Mars, who supposedly have had tons of trouble touching down recently. You grab your jetpack - Ganfald doesn’t need one - and start surveying the land. You see a hole, and you take out the Stinger. You remember when your father gave you the incredibly fast-firing gun. He said that 1000 years ago, people intensely disliked the gun for the very little damage it did. They, of course, had never tried it out in space. When the holeworm emerges from the hole, you shoot it 20 times through the eye. Ganfald, frustrated with how little he got to do, throws a nuke spell at the head of the holeworm. You leave the mushroom cloud behind and go home. A good adventure indeed.",
+  "choices": {
+    "1": "end game"
+  }
+},
+{
+  "id": "healer",
+  "text": "You’ve never liked healers. They’re little cowards, learning healing magic in exchange for not needing to do anything. But you’ve taken a liking to this one. It doesn’t use generic healing magic, it uses druid magic, which it’s quite good at using. It can even manipulate and create wood, which it can use both as an attack method and a defense mechanism. You approach the holeworm, and the healer comes with you. It makes a few incredibly fancy hand movements, and pauses. “That’s unusual. Let me try again…” You watch in horror as the druid’s magic slowly corrupts. It yells in shock. “What??? Oh. It’s because the wood can’t grow here.” You slap your forehead. Now you have a healer who can’t heal you without losing its soul, an incredibly powerful enemy, and a single double-barrelled shotgun. You shoot the holeworm and start running. You grab the druid and do an ol’ Joseph Joestar. He goes to heal you. You yell in horror as his soul is consumed. You gain some health back, but you whack the undead body of the druid in the head. It crumbles and falls. Unfortunate. You put another shell in the shotgun, shove the shotgun into the holeworm, and shoot twice. You wince in disgust as the holeworm falls to the ground. You go home with a heavy heart… and a heavy wallet.",
+  "choices": {
+    "1": "end game"
+  }
+},
+{
+  "id": "revive",
+  "text": "i mean like isekais are cool and all but we don't need the afterlife scene just go",
+  "choices": {
+    "1": "init"
+  }
+},
+{
+  "id": "end game",
+  "text": "you survived!",
+  "choices": {
+    "1": "exit",
+    "2": "revive"
+  }
 }]
