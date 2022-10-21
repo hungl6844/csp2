@@ -21,7 +21,6 @@ class Main {
 
     Type mapOfConfig = new TypeToken<Collection<Config>>() {}.getType();
     Collection<Config> config = new GsonBuilder().create().fromJson(reader, mapOfConfig);
-    System.out.println(Arrays.toString(config.toArray()));
     HashMap<String, Config> scenes = new HashMap<>();
     for (Config iterConfig : config) {
       scenes.put(iterConfig.id, iterConfig);
@@ -52,6 +51,7 @@ class Main {
       nextConfig = choice;
     }
   }
+  
   public static void typeWriter(String output) throws InterruptedException {
     for (char c : output.toCharArray()) {
       System.out.print(c);
