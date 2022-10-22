@@ -7,7 +7,7 @@
   },
   "needs": {
     "name": "What's your name?",
-    "class": "Do you want to be a fighter or a wizard?; -1 fighter; -2 wizard"
+    "class": "Do you want to be a fighter or a wizard?; - 1 fighter; - 2 wizard"
   }
 },
 {

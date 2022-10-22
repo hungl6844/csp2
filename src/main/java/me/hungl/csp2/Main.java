@@ -30,8 +30,26 @@ class Main {
 
     String nextConfig = "init";
     boolean storyRunning = true;
+    HashMap<String, String> variables = new HashMap<>();
+    
     while(storyRunning) {
       Config currentConfig = scenes.get(nextConfig);
+      if (currentConfig.needs.size() > 0) {
+        for (Map.Entry<String, String> set :  currentConfig.needs.entrySet()) {
+          if (set.getValue().contains(";")) {
+            String[] strings = set.getValue().split(";");
+            System.out.println(strings[0]);
+            for (int x = 1; x < strings.length; x++) {
+              System.out.println(strings[x]);
+            }
+            variables.put(set.getKey(), strings[input.nextInt()].replaceAll("[ -1234567890\n\r]", "").trim());
+          } else {
+            System.out.println(set.getValue());
+            variables.put(set.getKey(), input.next());
+          }
+        }
+      }
+      
       typeWriter(currentConfig.text);
 
       if (currentConfig.options.size() == 1) {
@@ -43,9 +61,13 @@ class Main {
       for (String choice : currentConfig.options.keySet()) {
         System.out.println("- " + choice + ": " + currentConfig.options.get(choice));
       }
-      String choice = currentConfig.options.get(input.next().strip());
-      if (choice.equals("exit")) {
-        System.exit(0);
+      String choice = "exit";
+      if (currentConfig.options.size() > 0) {
+        choice = currentConfig.options.get(input.next());
+        if (choice.equals("exit")) {
+          storyRunning = false;
+          continue;
+        }
       }
       System.out.println(choice);
       nextConfig = choice;
