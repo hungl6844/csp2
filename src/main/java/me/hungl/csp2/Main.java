@@ -34,18 +34,20 @@ class Main {
     
     while(storyRunning) {
       Config currentConfig = scenes.get(nextConfig);
-      if (currentConfig.needs.size() > 0) {
-        for (Map.Entry<String, String> set :  currentConfig.needs.entrySet()) {
-          if (set.getValue().contains(";")) {
-            String[] strings = set.getValue().split(";");
-            System.out.println(strings[0]);
-            for (int x = 1; x < strings.length; x++) {
-              System.out.println(strings[x]);
+      if (currentConfig.needs != null) {
+        if (currentConfig.needs.size() > 0) {
+          for (Map.Entry<String, String> set :  currentConfig.needs.entrySet()) {
+            if (set.getValue().contains(";")) {
+              String[] strings = set.getValue().split(";");
+              System.out.println(strings[0]);
+              for (int x = 1; x < strings.length; x++) {
+                System.out.println(strings[x]);
+              }
+              variables.put(set.getKey(), strings[input.nextInt()].replaceAll("[ -1234567890\n\r]", "").trim());
+            } else {
+              System.out.println(set.getValue());
+              variables.put(set.getKey(), input.next());
             }
-            variables.put(set.getKey(), strings[input.nextInt()].replaceAll("[ -1234567890\n\r]", "").trim());
-          } else {
-            System.out.println(set.getValue());
-            variables.put(set.getKey(), input.next());
           }
         }
       }
@@ -69,7 +71,6 @@ class Main {
           continue;
         }
       }
-      System.out.println(choice);
       nextConfig = choice;
     }
   }
